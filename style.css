@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+}
+
 @keyframes takeoff {
     0% {
       transform: translate(0,0);
@@ -60,7 +65,7 @@
     top: 50%;
     right: -100%;
     transform: translate(-50%, -50%);
-    width: 100px;
+    width: 150px;
   }
   
   .trail {
@@ -103,21 +108,41 @@
     border: none;
     background-color: #28a909;
     color: #000;
-    margin: 30px auto;
-    text-align: center;
+    margin: 50px auto;
     font-size: 18px;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 
   }
+  .prize{
+    width: 70vw;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    border: #1be996 solid 2px;
+    border-radius: 8px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
   @media screen and (max-width: 580px) {
-    .wraper{
+    .wraper, .prize{
       height: 300px;
       width: 90%;
       z-index: 0;
     }
+    .prize{
+      top: 100px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
     .index{
       height: 100px;
       z-index: 2;
+    }
+    .airplane{
+      width: 100px;
     }
   }
 
