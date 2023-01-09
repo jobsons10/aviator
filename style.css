@@ -63,6 +63,15 @@
     }
   }
 
+  @keyframes fontscale {
+    from {
+      transform: scale(1);
+    }
+    to{
+      transform: scale(1.25);
+    }
+  }
+
   body{
     background-color: black;
   
@@ -123,6 +132,10 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 
+  }
+  #prize p{
+    transform: scale(1.25);
+    animation: fontscale 15s linear;
   }
   .prize{
     width: 70vw;
