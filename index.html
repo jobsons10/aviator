@@ -13,18 +13,20 @@
         <div class="trail hide-me">
             <img class="airplane" src="./img/aviator_jogo.png" alt="">
         </div>
-        <div class="prize hide-me">
-            <p>R$<span>600</span></p>
+        <div class="prize hide-me" id="prize">
+            <p>R$<span id="num">600</span></p>
         </div>
-        <div class="prize preload">
+        <div class="prize preload" id="preload">
             <img src="./img/JOBERTO.png" alt="">
             <h2>À AGUARDAR A PRÓXIMA RODADA...</h2>
         </div>
     </div>
 
 
-    <button id="button">
+    <button id="button" onclick="start()">
         APOSTAR
     </button>
+
+    <script src="./script.js"></script>
 </body>
 </html>

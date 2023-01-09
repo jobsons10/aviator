@@ -87,7 +87,7 @@
     transform: translate(0, -100%);
     border-bottom: 3px solid #E40539;
     
-    animation: trail 15s linear infinite;
+    animation: trail 15s linear;
     border-bottom-right-radius: 50%;
   }
 
@@ -138,9 +138,6 @@
     justify-content: center;
     align-items: center;
   }
-.hide-me{
-    display: none;
-}
 
   .preload{
     display: flex;
@@ -164,6 +161,10 @@
     height: 50px;
     font-family: 'Montserrat', sans-serif;
   }
+
+  .hide-me{
+    display: none;
+}
   @media screen and (max-width: 580px) {
     .wraper, .prize{
       height: 300px;
