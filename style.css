@@ -54,6 +54,15 @@
     box-sizing: border-box;
   }
 
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
   body{
     background-color: black;
   
@@ -91,6 +100,7 @@
     background-size: cover;
     border: #E40539 solid 2px;
     border-radius: 8px;
+    
   }
 
   .index{
@@ -119,12 +129,40 @@
     height: 80vh;
     background-position: center;
     background-size: cover;
-    border: #1be996 solid 2px;
     border-radius: 8px;
     position: absolute;
     top: 10px;
     left: 50%;
     transform: translate(-50%, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.hide-me{
+    display: none;
+}
+
+  .preload{
+    display: flex;
+    flex-direction: column;
+  }
+  .preload img{
+    width: 120px;
+    height: auto;
+    animation:  rotate 3s infinite linear;
+  }
+  .preload h2{
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin-top: 15px;
+  }
+  .prize p{
+    font-size: 36px;
+    color: #fff;
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
   }
   @media screen and (max-width: 580px) {
     .wraper, .prize{
