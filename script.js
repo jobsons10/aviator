@@ -7,6 +7,7 @@ const start = function(){
     const num = document.getElementById('num');
     const divLoading = document.querySelector('.loading');
     const button = document.querySelector('#button');
+    const form = document.querySelector('#_form_14_');
 
 
     divTrail.classList.remove('hide-me');
@@ -22,4 +23,8 @@ const start = function(){
         n++;
         }
     }, 23);
+
+    window.setTimeout(function(){
+        form.classList.remove('hide-me');
+    }, 15000);
 }
