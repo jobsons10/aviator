@@ -7,6 +7,7 @@ const start = function(){
     const num = document.getElementById('num');
     const divLoading = document.querySelector('.loading');
     const button = document.querySelector('#button');
+    const form = document.querySelector('#_form_14_');
     const blur = document.querySelector('#blur');
 
 
@@ -26,5 +27,21 @@ const start = function(){
 
     window.setTimeout(function(){
         form.classList.remove('hide-me');
-    }, 15000);
+        blur.classList.add('blur');
+        const jsConfetti = new JSConfetti();
+                jsConfetti.addConfetti({
+                    emojis: ['💶', '🎁','💰','🎉', '💎'],
+                })
+                jsConfetti.addConfetti({
+                    confettiColors: [
+                        '#FFA200',
+                        '#F42E03',
+                        '#FFEC01',
+                        '#ECE202',
+                        '#16982B',
+                        '#2001FF',
+                        '#7CFF00'
+                    ],
+                })
+    }, 14300);
 }
