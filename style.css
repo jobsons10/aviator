@@ -220,6 +220,10 @@
 
   /* FORM */
 
+  .blur{
+  filter: blur(3px);
+  }
+
   form{
     background-color: #fff;
     width: 350px;

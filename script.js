@@ -7,7 +7,7 @@ const start = function(){
     const num = document.getElementById('num');
     const divLoading = document.querySelector('.loading');
     const button = document.querySelector('#button');
-    const form = document.querySelector('#_form_14_');
+    const blur = document.querySelector('#blur');
 
 
     divTrail.classList.remove('hide-me');
