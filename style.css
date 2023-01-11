@@ -2,6 +2,10 @@
   font-family: 'Montserrat', sans-serif;
   src: url(./fonts/Montserrat-VariableFont_wght.ttf);
 }
+@font-face {
+  font-family: 'Exo-Bold';
+  src: url(./fonts/Exo2-ExtraBold.ttf);
+}
 
 @keyframes takeoff {
     0% {
@@ -193,6 +197,87 @@
   }
 
 
+ 
+
+  /* FORM */
+
+  .blur{
+  filter: blur(3px);
+  }
+
+  form{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .gift, .form-container{
+    width: 450px;
+  }
+  ._form-title{
+    font-size: 39px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Exo-bold';
+  }
+  ._form-title span{
+    color: #b51818;
+    display: block;
+  }
+  ._form-subtitle{
+    color: #fff;
+    margin-top: 15px;
+    
+  }
+  ._form_element{
+    margin-top: 15px;
+  }
+  .field{
+    width: 100%;
+    border: 1px solid #818a91;
+    background-color: #FFFFFF40;
+    padding: 10px;
+    margin-top: 3px;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 4px;
+    height: 45px
+  }
+  form button{
+    width: 100%;
+    margin-top: 15px;
+    height: 45px;
+    border-radius: 4px;
+    background-color: #b51818;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+  }
+
+  .gift{
+    color: #fff;
+    border: 1px solid #b51818;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .gift lottie-player{
+    margin-top: -40px;
+  }
+  .gift h3{
+    margin-bottom: 15px;
+  }
+  
+  ._error-inner{
+    font-size: 10px;
+    color: #b51818;
+  }
+
   @media screen and (max-width: 580px) {
     .wraper, .prize{
       height: 300px;
@@ -216,68 +301,14 @@
       padding-inline: 10px;
       margin-top: 30px;
     }
-  }
-
-  /* FORM */
-
-  .blur{
-  filter: blur(3px);
-  }
-
-  form{
-    background-color: #fff;
-    width: 350px;
-    height: 420px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 5;
-    border-radius: 8px;
-    /* text-align: center; */
-    font-family: 'Montserrat', sans-serif;
-
-  }
-  ._form-title{
-    background-color: #e8e8e8;
-    padding-inline: 15px;
-    padding-block: 20px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    font-weight: 600;
-  }
-  ._form_element{
-    margin-inline: 15px;
-    margin-top: 15px;
-  }
-  ._form-label{
-    font-size: 14px;
-  }
-  .field{
+    form{
+      flex-direction: column-reverse;
+      padding-inline: 15px;
+      width: 100%;
+    }
+    .gift, .form-container{
     width: 100%;
-    border: 1px solid #e8e8e8;
-    padding: 10px;
-    margin-top: 3px;
   }
-  form button{
-    height: 50px;
-    padding-inline: 15px;
-    border-radius: 8px;
-    border: none;
-    margin-top: 25px;
-    background-color: #28a909;
-    color: #fff;
-    display: block;
-    margin-inline: auto;
-    position: relative;
-    left: 50%;
-    top: 100%;
-    transform: translate(-114%, -20%);
-  }
-  
-  ._error-inner{
-    font-size: 10px;
-    color: #b51818;
   }
 
   /* Codigo loading */
