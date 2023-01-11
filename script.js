@@ -27,7 +27,7 @@ const start = function(){
 
     window.setTimeout(function(){
         form.classList.remove('hide-me');
-        blur.classList.add('blur');
+        blur.classList.add('hide-me');
         const jsConfetti = new JSConfetti();
                 jsConfetti.addConfetti({
                     emojis: ['💶', '🎁','💰','🎉', '💎'],

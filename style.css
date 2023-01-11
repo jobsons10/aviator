@@ -309,6 +309,12 @@
     .gift, .form-container{
     width: 100%;
   }
+  ._form-title{
+    font-size: 32px;
+  }
+  form button{
+    border: none;
+  }
   }
 
   /* Codigo loading */
