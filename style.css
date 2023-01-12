@@ -164,7 +164,7 @@
     background-size: cover;
     border-radius: 8px;
     position: absolute;
-    top: 107.33px;
+    top: 15 7.33px;
     left: 50%;
     transform: translate(-50%, 0);
     display: flex;
@@ -194,6 +194,16 @@
     color: #fff;
     height: 50px;
     font-family: 'Montserrat', sans-serif;
+  }
+  .nav{
+    display: flex;
+    justify-content: center;
+    background-color: #1c1b1b;
+    padding-block: 15px;
+    margin-bottom: 50px;
+  }
+  #logo-img{
+    width: 60px;
   }
 
 
@@ -279,19 +289,30 @@
   }
 
   @media screen and (max-width: 580px) {
+    .nav{
+      display: flex;
+      justify-content: center;
+      background-color: #1c1b1b;
+      padding-block: 15px;
+      margin-bottom: 50px;
+    }
+    #logo-img{
+      width: 70px;
+    }
     .wraper, .prize{
       height: 300px;
       width: 90%;
       z-index: 0;
     }
     .prize{
-      top: 130px;
+      top: 245px;
       left: 50%;
       transform: translate(-50%, 0);
     }
     .index{
       height: 100px;
       z-index: 2;
+      margin-bottom: 10px;
     }
     .airplane{
       width: 100px;
