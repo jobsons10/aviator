@@ -6,6 +6,14 @@
   font-family: 'Exo-Bold';
   src: url(./fonts/Exo2-ExtraBold.ttf);
 }
+@font-face {
+  font-family: 'Maven-Pro-Bold';
+  src: url(./fonts/MavenPro-Bold.ttf);
+}
+@font-face {
+  font-family: 'Maven-Pro';
+  src: url(./fonts/MavenPro-VariableFont_wght.ttf);
+}
 
 @keyframes takeoff {
     0% {
@@ -81,10 +89,19 @@
     padding: 0;
     box-sizing: border-box;
   }
+ 
 
   body{
-    background-color: black;
-  
+    background-image: url(./img/BG.png);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  #blur{
+    min-height: 100vh;
+    background-color: #1c1b1b80;
+    padding-bottom: 60px;
   }
 
 
@@ -124,19 +141,21 @@
 
   .index{
     width: 100%;
-    background-color: black;
+    /* background-color: black; */
     z-index: 4;
     position: relative;
   }
   .index h1{
     color: #fff;
-    font-family: 'Montserrat';
-    font-weight: 600;
+    font-family: 'Exo-Bold';
     font-size: 32px;
     text-transform: uppercase;
     padding-inline: 100px;
     text-align: center;
     margin-block: 15px;
+  }
+  .index h1 span{
+    color: #df0538;
   }
   .button{
     display: block;
@@ -144,17 +163,22 @@
     height: 80px;
     border-radius: 13px;
     border: none;
-    background-color: #28a909;
+    background-color: #2bcb00;
+    box-shadow: 0px 0px 15px 1px #309b16;
     color: #fff;
     margin: 30px auto;
     font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Maven-Pro', sans-serif;
     font-weight: 600;
     cursor: pointer;
+    transition: transform .5s;
 
   }
+  .button:hover{
+    transform: scale(1.15);
+  }
   #prize p{
-    transform: scale(1.25);
+    transform: scale(1.2);
     animation: fontscale 15s linear;
   }
   .prize{
@@ -164,7 +188,7 @@
     background-size: cover;
     border-radius: 8px;
     position: absolute;
-    /* top: 15 7.33px; */
+    top: 215.33px;
     left: 50%;
     transform: translate(-50%, 0);
     display: flex;
@@ -185,7 +209,7 @@
   .preload h2{
     font-size: 16px;
     color: #fff;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Maven-Pro', sans-serif;
     font-weight: 300;
     margin-top: 15px;
   }
@@ -193,7 +217,7 @@
     font-size: 36px;
     color: #fff;
     height: 50px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Maven-Pro', sans-serif;
   }
   .nav{
     display: flex;
@@ -319,7 +343,7 @@
     }
     .index h1{
       font-size: 20px;
-      padding-inline: 10px;
+      padding-inline: 15px;
       margin-top: 30px;
     }
     form{
