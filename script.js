@@ -8,7 +8,7 @@ const start = function(){
     const divLoading = document.querySelector('.loading');
     const button = document.querySelector('#button');
     const form = document.querySelector('#_form_14_');
-    const blur = document.querySelector('#blur');
+    const contentGame = document.querySelector('#content-game');
 
 
     divTrail.classList.remove('hide-me');
@@ -27,7 +27,7 @@ const start = function(){
 
     window.setTimeout(function(){
         form.classList.remove('hide-me');
-        blur.classList.add('hide-me');
+        contentGame.classList.add('hide-me');
         const jsConfetti = new JSConfetti();
                 jsConfetti.addConfetti({
                     emojis: ['💶', '🎁','💰','🎉', '💎'],
