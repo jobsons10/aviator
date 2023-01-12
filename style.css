@@ -174,8 +174,8 @@
     transition: transform .5s;
 
   }
-  .button:hover{
-    transform: scale(1.15);
+  button:hover{
+    transform: scale(1.10);
   }
   #prize p{
     transform: scale(1.2);
@@ -285,10 +285,14 @@
     height: 45px;
     border-radius: 4px;
     background-color: #b51818;
+    box-shadow: 0px 0px 15px 1px #b51818;
     color: #fff;
     font-size: 15px;
     text-transform: uppercase;
     font-family: 'Montserrat';
+    transition: transform .5s;
+    border: none;
+    cursor: pointer;
   }
 
   .gift{
@@ -357,9 +361,7 @@
   ._form-title{
     font-size: 32px;
   }
-  form button{
-    border: none;
-  }
+  
   }
 
   /* Codigo loading */
